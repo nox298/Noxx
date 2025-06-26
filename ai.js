@@ -13,7 +13,7 @@ async function fetchGPTResponse(message) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer BURAYA_KENDİ_API_KEYİNİ_YAZ"
+        "Authorization": "Bearer sk-...MxkA
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
