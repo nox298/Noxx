@@ -37,3 +37,12 @@ async function fetchGPTResponse(message) {
     output.innerHTML += "❌ Hata: " + err.message + "\n";
   }
 }
+document.getElementById("noxform").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const input = document.getElementById("user-input");
+  const message = input.value.trim();
+  if (message) {
+    fetchGPTResponse(message);
+    input.value = "";
+  }
+});
